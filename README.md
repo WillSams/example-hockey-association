@@ -1,6 +1,6 @@
-# Abandoned Example Site - Hockey Savannah
+# Abandoned Branch - Example Site - Hockey Savannah
 
-Started working on a framework for the site back in November 2018, abandoned in (much of) current state in February 2019.  xxxx
+Started working on a framework for the site back in November 2018, abandoned in (much of) current state in February 2019.  This repository using KeystoneJS 4.0, a CMS that uses ExpressJS and MongoDB.  This branch is totally abandoned but I may do further clean up for clarity in the coming weeks.
 
 ## Pre-requisites
 
@@ -64,9 +64,9 @@ cp .envrc.example .envrc && direnv allow
 
 nvm use                  # use the version of NodeJS listed in .nvmrc
 npm i                    # install the packages listed in package.json
-npm run start            # starts executing website on http://localhost:8080
+npm run start            # starts executing website on http://localhost:$PORT
 ```
 
-The default username and password for the Admin CMS is `admin@keystonejs.com` and `admin`, respectively.  When making changes to pages, you may want to either turn the cache server off by executing `docker-compose stop cache` or clear the cache at `http://localhost:8080/cache`.  You can alternatively just start only the mongodb service listed in your `docker-compose.yml` file by just executing `docker-compose up -d mongodb`.
+The default username and password for the Admin CMS is `admin@keystonejs.com` and `admin`, respectively.  When making changes to pages, you may want to either turn the cache server off by executing `docker-compose stop cache` or clear the cache at `http://localhost:$PORT/cache`.  You can alternatively just start only the mongodb service listed in your `docker-compose.yml` file by just executing `docker-compose up -d mongodb`.
 
 If you want to poke around or customize, consult the [Keystone "classic" docs](https://v4.keystonejs.com/).  You can also change the username/password for the MongoDB's database but be sure to change the values in your .envrc file as well.

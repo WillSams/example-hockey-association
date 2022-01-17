@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint . --ignore-pattern 'public/'",
     "start": "node keystone.js",
+    "dev": "nodemon keystone.js",
     "test": "mocha lib/**/**.spec.js",
     "debug": "node --inspect-brk=0.0.0.0:9229 keystone.js"
   },
@@ -36,10 +37,11 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "cypress": "^9.2.0",
     "eslint-config-keystone": "^3.0.0",
     "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
     "mocha": "^5.2.0",
-    "cypress": "^9.2.0",
     "nodemon": "^1.18.7",
     "prettier": "^2.5.1"
   }
