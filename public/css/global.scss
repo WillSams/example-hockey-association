@@ -1,0 +1,81 @@
+html{
+  height:100%; 
+  width:100%; 
+  body{
+    @include body-font;    
+    h1, h2, h3 { @include heading-font; font-weight: 100; }
+    .sams-heading { @include heading-font; font-weight: 100; text-align: center; color: $sams-red;}
+    @include background-tint($sams-red-alpha, '/images/default-bkg.png');
+    
+    margin-top: 55px;  
+    //padding-bottom: 175px;
+    color: $sams-white;
+    font-weight: bolder;
+    background-color: $sams-white;
+    a {text-decoration:none; }
+    a:link { text-decoration:none; color: $sams-blue;   }
+    a:visited { text-decoration:none; color: $sams-blue; }
+    a:hover { text-decoration:none; color: $sams-white; }
+       
+    .row.content { height: auto; }    
+    .navbar { color: $sams-gray; }
+    .highlighted { color:#FFFF00;  }
+    
+    hr { color: $sams-white; background-color: $sams-red;}
+     
+    #countDown { background-color: $sams-black-alpha;}
+    
+    .red-background { background-color: $sams-red-alpha; }
+    
+    .black-background { background-color: $sams-black-alpha; }
+    
+    .gray-background { background-color: $sams-gray-alpha; }
+
+    full-area-content {
+      padding-top: 35px; 
+      padding-bottom: 75px;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
+      
+    .btn-xl {
+      padding: 1rem 1.75rem;
+      font-size: 1.25rem;
+    }
+
+    .center-block {
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+
+    .social-icon {padding: 5px;}
+
+    #contact-content {
+      background-color: $sams-black-alpha;
+      color: $sams-white;
+      h2, h3 { color: $sams-white; }
+    }
+    
+            
+    footer {
+      color: $sams-white;
+      padding: 15px; 
+      margin: auto auto;
+      text-align: center;
+    }    
+    
+    @media screen and (max-width: 767px) {
+      .full-area-content {
+        padding-top: 50px; 
+        padding-bottom: 155px;
+      }
+      .row.content {height: auto;} 
+
+      footer[class*="col-md-8"].pull-right {
+        float: none;
+      }
+    }
+  }
+}

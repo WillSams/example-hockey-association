@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  width: 100%; }
+  html body {
+    font-family: 'Lato';
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(204, 0, 0, 0.85), rgba(204, 0, 0, 0.85)), url("/images/default-bkg.png");
+    margin-top: 55px;
+    color: #f2f2f2;
+    font-weight: bolder;
+    background-color: #f2f2f2; }
+    html body h1, html body h2, html body h3 {
+      font-weight: 700;
+      font-family: 'Permanent Marker','Montserrat';
+      src: url("//fonts.googleapis.com/css?family=Permanent+Marker") format("truetype");
+      font-weight: 100; }
+    html body .sams-heading {
+      font-weight: 700;
+      font-family: 'Permanent Marker','Montserrat';
+      src: url("//fonts.googleapis.com/css?family=Permanent+Marker") format("truetype");
+      font-weight: 100;
+      text-align: center;
+      color: #cc0000; }
+    html body a {
+      text-decoration: none; }
+    html body a:link {
+      text-decoration: none;
+      color: #007bff; }
+    html body a:visited {
+      text-decoration: none;
+      color: #007bff; }
+    html body a:hover {
+      text-decoration: none;
+      color: #f2f2f2; }
+    html body .row.content {
+      height: auto; }
+    html body .navbar {
+      color: #a2a2a2; }
+    html body .highlighted {
+      color: #FFFF00; }
+    html body hr {
+      color: #f2f2f2;
+      background-color: #cc0000; }
+    html body #countDown {
+      background-color: rgba(52, 58, 64, 0.75); }
+    html body .red-background {
+      background-color: rgba(204, 0, 0, 0.85); }
+    html body .black-background {
+      background-color: rgba(52, 58, 64, 0.75); }
+    html body .gray-background {
+      background-color: rgba(160, 160, 160, 0.625); }
+    html body full-area-content {
+      padding-top: 35px;
+      padding-bottom: 75px;
+      height: auto;
+      margin: auto;
+      display: block; }
+    html body .btn-xl {
+      padding: 1rem 1.75rem;
+      font-size: 1.25rem; }
+    html body .center-block {
+      margin: auto;
+      display: block;
+      text-align: center; }
+    html body .social-icon {
+      padding: 5px; }
+    html body #contact-content {
+      background-color: rgba(52, 58, 64, 0.75);
+      color: #f2f2f2; }
+      html body #contact-content h2, html body #contact-content h3 {
+        color: #f2f2f2; }
+    html body footer {
+      color: #f2f2f2;
+      padding: 15px;
+      margin: auto auto;
+      text-align: center; }
+    @media screen and (max-width: 767px) {
+      html body .full-area-content {
+        padding-top: 50px;
+        padding-bottom: 155px; }
+      html body .row.content {
+        height: auto; }
+      html body footer[class*="col-md-8"].pull-right {
+        float: none; } }

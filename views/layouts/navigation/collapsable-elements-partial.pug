@@ -1,0 +1,42 @@
+#siteLinks.collapse.navbar-collapse
+  ul.navbar-nav
+    li.nav-item
+      a.nav-link(href='/') Home
+    li.nav-item
+      a.nav-link(href='/news') News
+    li.nav-item.dropdown
+      a.nav-item.nav-link.dropdown-toggle.mr-md-2(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Junior A.
+      .dropdown-menu
+        a.dropdown-item(href='/junior/tickets') Tickets
+        a.dropdown-item(href='/junior/staff') Staff
+        a.dropdown-item(href='/junior/schedule') Schedule
+        a.dropdown-item(href='/junior/roster') Roster
+        a.dropdown-item(href='/junior/stats') Stats
+        a.dropdown-item(href='/junior/commitments') Commitments
+    
+    li.nav-item.dropdown
+      a.nav-item.nav-link.dropdown-toggle.mr-md-2(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Youth
+      .dropdown-menu
+        h5.dropdown-header Boys
+        a.dropdown-item(href='/boys/u16-a') U16 A
+        a.dropdown-item(href='/boys/u14-a') U14 A
+        a.dropdown-item(href='/boys/u12-aa') U12 AA
+        a.dropdown-item(href='/boys/u12-a') U12 A
+        a.dropdown-item(href='/boys/u10-aa') U10 AA
+        a.dropdown-item(href='/boys/u10-a') U10 A
+        h5.dropdown-header Girls
+        a.dropdown-item(href='/girls/u19-tier-1') U19 Tier 1
+        a.dropdown-item(href='/girls/u16-tier-2') U16 Tier 2
+        a.dropdown-item(href='/girls/u14-tier-2') U14 Tier 2
+        a.dropdown-item(href='/girls/u12-tier-2') U12 Tier 2
+        a.dropdown-item(href='/girls/u10-tier-2') U10 Tier 2
+    li.nav-item
+      a.nav-link(href='/about') About
+    li.nav-item
+      a.nav-link(href='/alumni') Alumni
+    if user
+      if user.canAccessKeystone
+        li.nav-item: a.nav-link(href='/keystone') Admin
+      li.nav-item: a.nav-link(href='/keystone/signout') Logout

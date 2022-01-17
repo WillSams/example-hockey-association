@@ -1,0 +1,7 @@
+NODE_ENV=development
+COOKIE_SECRET=c00ki3s3cr3t
+MONGO_URI=mongodb://hockeysavannah-dev-user:passw0rd123@127.0.0.1:27017/hockeysavannah-dev
+
+PORT=8181
+
+MEMCACHE_SERVER=localhost:11211

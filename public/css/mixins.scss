@@ -1,0 +1,20 @@
+@mixin body-font() {
+  font-family: 'Lato';
+}
+
+@mixin heading-font() {
+  font-weight: 700;
+  font-family: 'Permanent Marker','Montserrat';
+  src: url('//fonts.googleapis.com/css?family=Permanent+Marker') format('truetype');
+}
+
+@mixin background-tint($tint_color, $image_url) {
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+   background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( $tint_color, $tint_color ), url( $image_url );
+}
