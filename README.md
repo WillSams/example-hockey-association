@@ -1,4 +1,6 @@
-# React/GraphQL/DynamoDb Example Site - Hockey Savannah
+# Example Site - Hockey Savannah
+
+A full-stack application using React, GraphQL, & AWS DynamoDb.
 
 WIP
 
